@@ -1,64 +1,38 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({title}) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Event App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header>
+        <nav>
+          <img />
+          <a href='/'> Home</a>
+          <a href='/events'> Events</a>
+          <a href='/about-us'> About us</a>
+        </nav>
+      </header>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <a href=''>
+          <img />
+          <h2>Events in London</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae condimentum dui. Maecenas aliquet metus et risus consectetur, id dignissim risus aliquam. Sed dignissim arcu et ex pulvinar, vitae ullamcorper lectus iaculis. Morbi id nisi elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam rutrum placerat turpis, et fermentum ligula sodales ac. Morbi in dolor et ligula placerat venenatis non nec neque. Donec vel rhoncus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam blandit dui sit amet ex feugiat, eget interdum mi efficitur. Mauris odio quam, posuere sed sollicitudin ut, tristique sed orci. Sed nec velit at nunc semper finibus. Sed nec aliquet ante.</p>
+        </a>
+        <a href=''>
+          <img />
+          <h2>Events in Madrid</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae condimentum dui. Maecenas aliquet metus et risus consectetur, id dignissim risus aliquam. Sed dignissim arcu et ex pulvinar, vitae ullamcorper lectus iaculis. Morbi id nisi elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam rutrum placerat turpis, et fermentum ligula sodales ac. Morbi in dolor et ligula placerat venenatis non nec neque. Donec vel rhoncus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam blandit dui sit amet ex feugiat, eget interdum mi efficitur. Mauris odio quam, posuere sed sollicitudin ut, tristique sed orci. Sed nec velit at nunc semper finibus. Sed nec aliquet ante.</p>
+        </a>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <p>@ 2022 Time to Code - A Project Nextjs</p>
       </footer>
     </div>
   )
