@@ -1,23 +1,14 @@
-const EventsPage = (props) => {
-  const { title } = props;
-  return (
-    <div>
-      <h1>Event EventsPage</h1>
-      <div>
-        <a href=""><img /><h2>Event in London</h2></a>
-        <a href=""><img /><h2>Event in Madrid</h2></a>
-        <a href=""><img /><h2>Event in Paris</h2></a>
-      </div>
-    </div>
-  )
-}
+import { useEffect, useState } from 'react';
+import AllEvents from '../../src/components/events/events-page';
+const jsonData = require("../../data/data.json")
+
+const EventsPage = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const { events_categories } = jsonData;
+    setData(events_categories);
+  }, [])
+  return <AllEvents data={data} />;
+};
+
 export default EventsPage;
-
-export function getServerSideProps() {
-  return {
-    props: {
-      title: "Hello every one!",
-
-    }
-  }
-}
