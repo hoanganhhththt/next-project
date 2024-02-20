@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import CatEvent from '../../../src/components/events/catEvent';
-const jsonData = require("../../../data/data.json");
+import CatEvent from '../../../components/events/catEvent';
+const jsonData = require("../../../../data/data.json");
 
 const EventsCatPage = ({ data, pageName }) => {
   // const [data, setData] = useState([]);

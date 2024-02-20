@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import AllEvents from '../../src/components/events/events-page';
-const jsonData = require("../../data/data.json")
+import AllEvents from '../../components/events/events-page';
+const jsonData = require("../../../data/data.json")
 
 const EventsPage = () => {
   const [data, setData] = useState([]);
