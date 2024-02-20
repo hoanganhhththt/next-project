@@ -1,4 +1,5 @@
-import MainLayout from '../src/components/layout/main-layout'
+import React from 'react';
+import  MainLayout from '../src/components/layout/main-layout'
 import '../styles/globals.css';
 import '../styles/general.sass';
 
