@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const path = require('path');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -7,6 +8,10 @@ const nextConfig = {
   },
   babel: {
     presets: ['@babel/preset-react'],
+  },
+  webpack: (config) => {
+    config.resolve.alias['src'] = path.resolve(__dirname, 'src');
+    return config;
   },
 };
 
