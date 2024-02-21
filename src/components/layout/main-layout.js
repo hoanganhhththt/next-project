@@ -1,12 +1,25 @@
 import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
+import './main.module.css'
+import 'antd/dist/antd.css';
+import { Layout } from 'antd';
+const { Sider, Content } = Layout;
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <Layout>
+        <Header />
+        <Layout>
+          <Sider >
+            Sider
+          </Sider>
+          <Content>
+            <main>{children}</main>
+          </Content>
+        </Layout>
+        <Footer />
+      </Layout>
     </>
   );
 };
