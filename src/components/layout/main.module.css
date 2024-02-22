@@ -1,10 +1,6 @@
 .code-box-demo {
   text-align: center;
 }
-.layout-main {
-  overflow: auto;
-  height: calc(100vh - 55px) !important;
-}
 .ant-layout-header,
 .ant-layout-footer {
   color: #fff;
@@ -21,6 +17,7 @@
 }
 .ant-layout-sider {
   color: #fff;
+  width: 300px;
   line-height: 120px;
   background: #3ba0e9;
 }
@@ -38,8 +35,4 @@
 }
 > .code-box-demo > .ant-layout + .ant-layout {
   margin-top: 48px;
-}
-
-.main-layout {
-  height: calc(100vh - 190px);
 }

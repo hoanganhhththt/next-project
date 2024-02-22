@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
+const withCSS = require('@zeit/next-css');
 const nextConfig = {
   port: 3001,
   reactStrictMode: true,

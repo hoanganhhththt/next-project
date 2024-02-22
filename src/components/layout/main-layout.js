@@ -10,8 +10,8 @@ const MainLayout = ({ children }) => {
     <>
       {/* <Layout> */}
         <Header />
-        <Layout style={{ height: 'calc(100vh - 55px)' }}>
-          <Sider >
+        <Layout className='main-layout'>
+          <Sider className='sidebar'>
             Sider
           </Sider>
           <Content>
