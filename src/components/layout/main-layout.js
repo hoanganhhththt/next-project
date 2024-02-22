@@ -8,9 +8,9 @@ const { Sider, Content } = Layout;
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Layout>
+      {/* <Layout> */}
         <Header />
-        <Layout>
+        <Layout style={{ height: 'calc(100vh - 55px)' }}>
           <Sider >
             Sider
           </Sider>
@@ -18,8 +18,8 @@ const MainLayout = ({ children }) => {
             <main>{children}</main>
           </Content>
         </Layout>
-        <Footer />
-      </Layout>
+        {/* <Footer /> */}
+      {/* </Layout> */}
     </>
   );
 };

@@ -1,7 +1,8 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export const Header = () => {
+export const Header = React.memo(() => {
   return (
     <header>
       <div>
@@ -31,4 +32,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+});

@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
 const nextConfig = {
+  port: 3001,
   reactStrictMode: true,
   swcMinify: true,
   images: {
