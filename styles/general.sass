@@ -44,12 +44,6 @@ footer
   padding: 10px
   text-align: center
 
-aside
-  width: 300px !important
-  flex: 0 0 300px !important
-  max-width: 300px !important
-  min-width: 300px !important
-
 main
   margin: 60px 1% 1% 1%
   clear: both
@@ -76,6 +70,23 @@ main
 .about_us_list
   display: flex
   flex-direction: column
+
+.ant-layout-sider 
+  background: #fafafa
+
+.sidebar-open 
+  flex: 0 0 270px !important
+  min-width: 270px !important
+  max-width: 270px !important
+  width: 270px !important
+  background: #F4F5FD
+  box-shadow: 0px 3px 3px -2px #00000033, 0px 3px 4px 0px #00000024, 0px 1px 8px 0px #0000001f
+
+.sidebar-close 
+  flex: 0 0 60px !important
+  min-width: 60px !important
+  max-width: 60px !important
+  width: 60px !important
 
 .events_page
   display: flex
@@ -108,8 +119,8 @@ main
       width: 30%
 
 .main-layout
-  min-height: 100vh
   background: #f0f2f5
+  min-height: 100vh
 
 .event_single_page
   .email_registration

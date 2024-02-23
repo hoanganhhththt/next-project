@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
-const withCSS = require('@zeit/next-css');
+// const withCSS = require('@zeit/next-css');
+const withImages = require('next-images');
+const withPlugins = require('next-compose-plugins');
 const nextConfig = {
   port: 3001,
   reactStrictMode: true,
@@ -17,4 +19,10 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const plugins = [
+  // withCSS,
+  withImages
+  // Thêm các plugin khác nếu cần
+];
+
+module.exports = withPlugins(plugins, nextConfig);
