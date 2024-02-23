@@ -5,6 +5,7 @@ import { KeyOutlined, MenuFoldOutlined, MenuUnfoldOutlined, PoweroffOutlined, Us
 import { Dropdown } from 'antd';
 import Logo from '../../../public/images/logo2.png';
 import Avatar from '../../../public/images/user.png';
+import './header.module.scss'
 
 export const Header = React.memo((props) => {
   const { handleCollapse } = props;
@@ -77,7 +78,7 @@ export const Header = React.memo((props) => {
           <MenuFoldOutlined onClick={() => handleCollapseHeader()} className="icon-menu-fold" />
         )}
         <span>
-          <Image src={Logo} alt="logo" width={120} height={55} style={{ width: 120, marginTop: -14 }} />
+          <img src={Logo} alt="logo" style={{ width: 120,  marginTop: -14 }} />
         </span>
       </div>
       <div className='text-header'>
@@ -86,14 +87,14 @@ export const Header = React.memo((props) => {
           <span className="code-text">Merchant Management</span>
         </span>
       </div>
-      {/* <div className="float-right right-content">
+      <div className="float-right right-content">
         <Dropdown menu={menuProps} className="dropdown-info">
           <span className="ant-dropdown-link cursor-pointer">
             <span className='border-avatar'><img className="avatar" src={Avatar} alt="avatar" /></span>
-            <b style={{ color: 'white', marginLeft: '10px' }}>{username}</b>
+            <b style={{ color: 'white', marginLeft: '10px' }}>{'hale'}</b>
           </span>
         </Dropdown>
-      </div> */}
+      </div>
     </div>
   );
 });

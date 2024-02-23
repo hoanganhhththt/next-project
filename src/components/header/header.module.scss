@@ -1,0 +1,87 @@
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  border-bottom: 1px solid #C8CED3;
+  z-index: 10;
+  background-color: #005F92;
+}
+
+.icon-menu-fold {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 20px;
+  color: white;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .notification, .dropdown-info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+
+    &:hover {
+      background-color: rgba(0,0,0,.025);
+    }
+  }
+}
+
+.notification {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.icon-notification {
+  font-size: 25px;
+}
+
+.avatar {
+  width: 20px;
+  color: white;
+}
+.border-avatar {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count-notification {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  min-width: 18px;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  color: white;
+  background: red;
+}
+
+.qr-text {
+  font-size: 26px;
+  color: red;
+  font-weight: bold;
+}
+
+.code-text {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+}
+.text-header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
