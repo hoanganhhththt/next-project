@@ -359,6 +359,7 @@ body {
   align-items: center !important;
   white-space: unset !important;
   line-height: 20px !important;
+  margin-top: 0;
 }
 .anticon-unlock {
   color: #1890ff;
@@ -511,7 +512,7 @@ body {
 .ant-menu-vertical-left .ant-menu-item::after,
 .ant-menu-vertical-right .ant-menu-item::after,
 .ant-menu-inline .ant-menu-item::after {
-  border-right: 3px solid #0071a9;
+  // border-right: 3px solid #0071a9;
 }
 
 .ant-menu-item a:hover {
