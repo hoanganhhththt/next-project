@@ -58,7 +58,7 @@ const MainLayout = ({ children }) => {
           <Sidebar className='sidebar' isCollapsed={isCollapsed}/>
           <Layout className="site-layout">
             <Breadcrumb>{renderBreadcrumb(arrayBreadcrumb)}</Breadcrumb>
-            <Content style={{ margin: "40px 0px 16px 16px", clear: "both" }}>
+            <Content style={{ margin: "40px 0px 10px 10px", clear: "both" }}>
               <main>{children}</main>
             </Content>
           </Layout>
